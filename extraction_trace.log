@@ -1,0 +1,294 @@
+
+--- Extracting CORN ---
+Found target table on page 7, index 0
+Year Header Row found at index 0: ['', '2021/22', '2022/23', '2023/24 1/', '2024/25 2/']
+Processing label block at Row 1: ['Area planted (mil. ac.)', 'Area harvested', 'Yield (bu./ac.)', 'Production (mil. bu.)', 'Beginning stocks', 'Imports', 'Supply', 'Feed & residual', 'Ethanol', 'Total food, seed & industrial', 'Total domestic use', 'Exports', 'Total use', 'Ending stocks', 'Stocks/use (percent)', 'Season-avg. farm price ($/bu.)']
+Detected Merged Style
+  Captured (Merged): Area planted (mil. ac.) [2021] = 92.9
+  Captured (Merged): Area planted (mil. ac.) [2022] = 88.2
+  Captured (Merged): Area planted (mil. ac.) [2023] = 94.6
+  Captured (Merged): Area planted (mil. ac.) [2024] = 91.0
+  Captured (Merged): Area harvested [2021] = 85.0
+  Captured (Merged): Area harvested [2022] = 78.7
+  Captured (Merged): Area harvested [2023] = 86.5
+  Captured (Merged): Area harvested [2024] = 83.1
+  Captured (Merged): Yield (bu./ac.) [2021] = 176.7
+  Captured (Merged): Yield (bu./ac.) [2022] = 173.4
+  Captured (Merged): Yield (bu./ac.) [2023] = 177.3
+  Captured (Merged): Yield (bu./ac.) [2024] = 181.0
+  Captured (Merged): Production (mil. bu.) [2021] = 15018
+  Captured (Merged): Production (mil. bu.) [2022] = 13651
+  Captured (Merged): Production (mil. bu.) [2023] = 15342
+  Captured (Merged): Production (mil. bu.) [2024] = 15040
+  Captured (Merged): Beginning stocks [2021] = 1235
+  Captured (Merged): Beginning stocks [2022] = 1377
+  Captured (Merged): Beginning stocks [2023] = 1360
+  Captured (Merged): Beginning stocks [2024] = 2172
+  Captured (Merged): Imports [2021] = 24
+  Captured (Merged): Imports [2022] = 39
+  Captured (Merged): Imports [2023] = 25
+  Captured (Merged): Imports [2024] = 25
+  Captured (Merged): Supply [2021] = 16277
+  Captured (Merged): Supply [2022] = 15066
+  Captured (Merged): Supply [2023] = 16727
+  Captured (Merged): Supply [2024] = 17237
+  Captured (Merged): Feed & residual [2021] = 5671
+  Captured (Merged): Feed & residual [2022] = 5487
+  Captured (Merged): Feed & residual [2023] = 5675
+  Captured (Merged): Feed & residual [2024] = 5750
+  Captured (Merged): Ethanol [2021] = 5320
+  Captured (Merged): Ethanol [2022] = 5176
+  Captured (Merged): Ethanol [2023] = 5375
+  Captured (Merged): Ethanol [2024] = 5400
+  Captured (Merged): Total food, seed & industrial [2021] = 6757
+  Captured (Merged): Total food, seed & industrial [2022] = 6558
+  Captured (Merged): Total food, seed & industrial [2023] = 6780
+  Captured (Merged): Total food, seed & industrial [2024] = 6805
+  Captured (Merged): Total domestic use [2021] = 12427
+  Captured (Merged): Total domestic use [2022] = 12045
+  Captured (Merged): Total domestic use [2023] = 12455
+  Captured (Merged): Total domestic use [2024] = 12555
+  Captured (Merged): Exports [2021] = 2472
+  Captured (Merged): Exports [2022] = 1661
+  Captured (Merged): Exports [2023] = 2100
+  Captured (Merged): Exports [2024] = 2150
+  Captured (Merged): Total use [2021] = 14900
+  Captured (Merged): Total use [2022] = 13706
+  Captured (Merged): Total use [2023] = 14555
+  Captured (Merged): Total use [2024] = 14705
+  Captured (Merged): Ending stocks [2021] = 1377
+  Captured (Merged): Ending stocks [2022] = 1360
+  Captured (Merged): Ending stocks [2023] = 2172
+  Captured (Merged): Ending stocks [2024] = 2532
+  Captured (Merged): Stocks/use (percent) [2021] = 9.2
+  Captured (Merged): Stocks/use (percent) [2022] = 9.9
+  Captured (Merged): Stocks/use (percent) [2023] = 14.9
+  Captured (Merged): Stocks/use (percent) [2024] = 17.2
+  Captured (Merged): Season-avg. farm price ($/bu.) [2021] = 6.00
+  Captured (Merged): Season-avg. farm price ($/bu.) [2022] = 6.54
+  Captured (Merged): Season-avg. farm price ($/bu.) [2023] = 4.80
+  Captured (Merged): Season-avg. farm price ($/bu.) [2024] = 4.40
+
+--- Extracting SOYBEAN ---
+Found target table on page 8, index 0
+Year Header Row found at index 1: ['', '', '2021/22', '', '', '2022/23', '', '', '2023/24 /1', '', '', '2024/25 /2', '']
+Processing label block at Row 3: ['Area planted (mil. ac.)', 'Area harvested', 'Yield (bu./ac.)', 'Production (mil. bu.)', 'Beginning stocks', 'Imports', 'Supply', 'Crush', 'Seed and Residual', 'Total domestic use', 'Exports', 'Total use', 'Ending stocks', 'Stocks/use (percent)', 'Season-avg. farm price ($/bu.)']
+Detected Sequential Style
+  Captured (Seq): Area planted (mil. ac.) [2021] = 87.2
+  Captured (Seq): Area planted (mil. ac.) [2022] = 87.5
+  Captured (Seq): Area planted (mil. ac.) [2023] = 83.6
+  Captured (Seq): Area planted (mil. ac.) [2024] = 87.5
+  Captured (Seq): Area harvested [2021] = 86.3
+  Captured (Seq): Area harvested [2022] = 86.2
+  Captured (Seq): Area harvested [2023] = 82.4
+  Captured (Seq): Area harvested [2024] = 86.6
+  Captured (Seq): Yield (bu./ac.) [2021] = 51.7
+  Captured (Seq): Yield (bu./ac.) [2022] = 49.6
+  Captured (Seq): Yield (bu./ac.) [2023] = 50.6
+  Captured (Seq): Yield (bu./ac.) [2024] = 52.0
+  Captured (Seq): Production (mil. bu.) [2021] = 4464
+  Captured (Seq): Production (mil. bu.) [2022] = 4270
+  Captured (Seq): Production (mil. bu.) [2023] = 4165
+  Captured (Seq): Production (mil. bu.) [2024] = 4505
+  Captured (Seq): Beginning stocks [2021] = 257
+  Captured (Seq): Beginning stocks [2022] = 274
+  Captured (Seq): Beginning stocks [2023] = 264
+  Captured (Seq): Beginning stocks [2024] = 315
+  Captured (Seq): Imports [2021] = 16
+  Captured (Seq): Imports [2022] = 25
+  Captured (Seq): Imports [2023] = 30
+  Captured (Seq): Imports [2024] = 15
+  Captured (Seq): Supply [2021] = 4737
+  Captured (Seq): Supply [2022] = 4569
+  Captured (Seq): Supply [2023] = 4459
+  Captured (Seq): Supply [2024] = 4835
+  Captured (Seq): Crush [2021] = 2204
+  Captured (Seq): Crush [2022] = 2212
+  Captured (Seq): Crush [2023] = 2300
+  Captured (Seq): Crush [2024] = 2400
+  Captured (Seq): Seed and Residual [2021] = 107
+  Captured (Seq): Seed and Residual [2022] = 101
+  Captured (Seq): Seed and Residual [2023] = 124
+  Captured (Seq): Seed and Residual [2024] = 125
+  Captured (Seq): Total domestic use [2021] = 2311
+  Captured (Seq): Total domestic use [2022] = 2313
+  Captured (Seq): Total domestic use [2023] = 2424
+  Captured (Seq): Total domestic use [2024] = 2525
+  Captured (Seq): Exports [2021] = 2152
+  Captured (Seq): Exports [2022] = 1992
+  Captured (Seq): Exports [2023] = 1720
+  Captured (Seq): Exports [2024] = 1875
+  Captured (Seq): Total use [2021] = 4463
+  Captured (Seq): Total use [2022] = 4305
+  Captured (Seq): Total use [2023] = 4144
+  Captured (Seq): Total use [2024] = 4400
+  Captured (Seq): Ending stocks [2021] = 274
+  Captured (Seq): Ending stocks [2022] = 264
+  Captured (Seq): Ending stocks [2023] = 315
+  Captured (Seq): Ending stocks [2024] = 435
+  Captured (Seq): Stocks/use (percent) [2021] = 6.1
+  Captured (Seq): Stocks/use (percent) [2022] = 6.1
+  Captured (Seq): Stocks/use (percent) [2023] = 7.6
+  Captured (Seq): Stocks/use (percent) [2024] = 9.9
+  Captured (Seq): Season-avg. farm price ($/bu.) [2021] = 13.30
+  Captured (Seq): Season-avg. farm price ($/bu.) [2022] = 14.20
+  Captured (Seq): Season-avg. farm price ($/bu.) [2023] = 12.65
+  Captured (Seq): Season-avg. farm price ($/bu.) [2024] = 11.20
+
+--- Extracting SOYBEAN_MEAL ---
+Found target table on page 9, index 0
+Year Header Row found at index 1: ['', '', '2021/22', '', '', '2022/23', '', '', '2023/24 /1', '', '', '2024/25 /2', '']
+Processing label block at Row 3: ['Production (thou. short tons)', 'Beginning stocks', 'Imports', 'Supply', 'Domestic Use', 'Exports', 'Total use', 'Ending stocks', 'Avg. price ($/short ton)']
+Detected Sequential Style
+  Captured (Seq): Production (thou. short tons) [2021] = 51814
+  Captured (Seq): Production (thou. short tons) [2022] = 52493
+  Captured (Seq): Production (thou. short tons) [2023] = 54154
+  Captured (Seq): Production (thou. short tons) [2024] = 56525
+  Captured (Seq): Beginning stocks [2021] = 341
+  Captured (Seq): Beginning stocks [2022] = 311
+  Captured (Seq): Beginning stocks [2023] = 371
+  Captured (Seq): Beginning stocks [2024] = 400
+  Captured (Seq): Imports [2021] = 655
+  Captured (Seq): Imports [2022] = 632
+  Captured (Seq): Imports [2023] = 600
+  Captured (Seq): Imports [2024] = 600
+  Captured (Seq): Supply [2021] = 52810
+  Captured (Seq): Supply [2022] = 53436
+  Captured (Seq): Supply [2023] = 55125
+  Captured (Seq): Supply [2024] = 57525
+  Captured (Seq): Domestic Use [2021] = 38959
+  Captured (Seq): Domestic Use [2022] = 38402
+  Captured (Seq): Domestic Use [2023] = 39425
+  Captured (Seq): Domestic Use [2024] = 40625
+  Captured (Seq): Exports [2021] = 13540
+  Captured (Seq): Exports [2022] = 14664
+  Captured (Seq): Exports [2023] = 15300
+  Captured (Seq): Exports [2024] = 16500
+  Captured (Seq): Total use [2021] = 52499
+  Captured (Seq): Total use [2022] = 53065
+  Captured (Seq): Total use [2023] = 54725
+  Captured (Seq): Total use [2024] = 57125
+  Captured (Seq): Ending stocks [2021] = 311
+  Captured (Seq): Ending stocks [2022] = 371
+  Captured (Seq): Ending stocks [2023] = 400
+  Captured (Seq): Ending stocks [2024] = 400
+  Captured (Seq): Avg. price ($/short ton) [2021] = 439.81
+  Captured (Seq): Avg. price ($/short ton) [2022] = 451.91
+  Captured (Seq): Avg. price ($/short ton) [2023] = 380.00
+  Captured (Seq): Avg. price ($/short ton) [2024] = 320.00
+
+--- Extracting SOYBEAN_OIL ---
+Found target table on page 10, index 0
+Year Header Row found at index 1: ['', '', '2021/22', '', '', '2022/23', '', '', '2023/24 /1', '', '', '2024/25 /2', '']
+Processing label block at Row 3: ['Production (mil. lbs.)', 'Beginning stocks', 'Imports', 'Supply', 'Domestic Use', 'Biodiesel', 'Food, Feed, Other Industrial', 'Exports', 'Total use', 'Ending stocks', 'Avg. price (cents/lb.)']
+Detected Sequential Style
+  Captured (Seq): Production (mil. lbs.) [2021] = 26155
+  Captured (Seq): Production (mil. lbs.) [2022] = 26227
+  Captured (Seq): Production (mil. lbs.) [2023] = 27025
+  Captured (Seq): Production (mil. lbs.) [2024] = 28220
+  Captured (Seq): Beginning stocks [2021] = 2131
+  Captured (Seq): Beginning stocks [2022] = 1991
+  Captured (Seq): Beginning stocks [2023] = 1602
+  Captured (Seq): Beginning stocks [2024] = 1577
+  Captured (Seq): Imports [2021] = 303
+  Captured (Seq): Imports [2022] = 376
+  Captured (Seq): Imports [2023] = 450
+  Captured (Seq): Imports [2024] = 450
+  Captured (Seq): Supply [2021] = 28589
+  Captured (Seq): Supply [2022] = 28594
+  Captured (Seq): Supply [2023] = 29077
+  Captured (Seq): Supply [2024] = 30247
+  Captured (Seq): Domestic Use [2021] = 24827
+  Captured (Seq): Domestic Use [2022] = 26614
+  Captured (Seq): Domestic Use [2023] = 27200
+  Captured (Seq): Domestic Use [2024] = 28200
+  Captured (Seq): Biodiesel [2021] = 10379
+  Captured (Seq): Biodiesel [2022] = 12491
+  Captured (Seq): Biodiesel [2023] = 13000
+  Captured (Seq): Biodiesel [2024] = 14000
+  Captured (Seq): Food, Feed, Other Industrial [2021] = 14449
+  Captured (Seq): Food, Feed, Other Industrial [2022] = 14123
+  Captured (Seq): Food, Feed, Other Industrial [2023] = 14200
+  Captured (Seq): Food, Feed, Other Industrial [2024] = 14200
+  Captured (Seq): Exports [2021] = 1771
+  Captured (Seq): Exports [2022] = 378
+  Captured (Seq): Exports [2023] = 300
+  Captured (Seq): Exports [2024] = 350
+  Captured (Seq): Total use [2021] = 26598
+  Captured (Seq): Total use [2022] = 26992
+  Captured (Seq): Total use [2023] = 27500
+  Captured (Seq): Total use [2024] = 28550
+  Captured (Seq): Ending stocks [2021] = 1991
+  Captured (Seq): Ending stocks [2022] = 1602
+  Captured (Seq): Ending stocks [2023] = 1577
+  Captured (Seq): Ending stocks [2024] = 1697
+  Captured (Seq): Avg. price (cents/lb.) [2021] = 73.0
+  Captured (Seq): Avg. price (cents/lb.) [2022] = 65.3
+  Captured (Seq): Avg. price (cents/lb.) [2023] = 51.0
+  Captured (Seq): Avg. price (cents/lb.) [2024] = 45.0
+
+--- Extracting WHEAT ---
+Found target table on page 11, index 0
+Year Header Row found at index 0: ['', '2021/22', '2022/23', '2023/24 1/', '2024/25 2/']
+Processing label block at Row 1: ['Area planted (mil. ac.)', 'Area harvested', 'Yield (bu./ac.)', 'Production (mil. bu.)', 'Beginning stocks', 'Imports', 'Supply', 'Feed & residual', 'Food & seed', 'Total domestic use', 'Exports', 'Total use', 'Ending stocks', 'Stocks/use (percent)', 'Season-avg. farm price ($/bu.)']
+Detected Merged Style
+  Captured (Merged): Area planted (mil. ac.) [2021] = 46.7
+  Captured (Merged): Area planted (mil. ac.) [2022] = 45.8
+  Captured (Merged): Area planted (mil. ac.) [2023] = 49.6
+  Captured (Merged): Area planted (mil. ac.) [2024] = 47.0
+  Captured (Merged): Area harvested [2021] = 37.1
+  Captured (Merged): Area harvested [2022] = 35.5
+  Captured (Merged): Area harvested [2023] = 37.3
+  Captured (Merged): Area harvested [2024] = 38.4
+  Captured (Merged): Yield (bu./ac.) [2021] = 44.3
+  Captured (Merged): Yield (bu./ac.) [2022] = 46.5
+  Captured (Merged): Yield (bu./ac.) [2023] = 48.6
+  Captured (Merged): Yield (bu./ac.) [2024] = 49.5
+  Captured (Merged): Production (mil. bu.) [2021] = 1646
+  Captured (Merged): Production (mil. bu.) [2022] = 1650
+  Captured (Merged): Production (mil. bu.) [2023] = 1812
+  Captured (Merged): Production (mil. bu.) [2024] = 1900
+  Captured (Merged): Beginning stocks [2021] = 845
+  Captured (Merged): Beginning stocks [2022] = 674
+  Captured (Merged): Beginning stocks [2023] = 570
+  Captured (Merged): Beginning stocks [2024] = 658
+  Captured (Merged): Imports [2021] = 96
+  Captured (Merged): Imports [2022] = 122
+  Captured (Merged): Imports [2023] = 145
+  Captured (Merged): Imports [2024] = 120
+  Captured (Merged): Supply [2021] = 2588
+  Captured (Merged): Supply [2022] = 2446
+  Captured (Merged): Supply [2023] = 2527
+  Captured (Merged): Supply [2024] = 2678
+  Captured (Merged): Feed & residual [2021] = 88
+  Captured (Merged): Feed & residual [2022] = 77
+  Captured (Merged): Feed & residual [2023] = 120
+  Captured (Merged): Feed & residual [2024] = 110
+  Captured (Merged): Food & seed [2021] = 1029
+  Captured (Merged): Food & seed [2022] = 1041
+  Captured (Merged): Food & seed [2023] = 1024
+  Captured (Merged): Food & seed [2024] = 1024
+  Captured (Merged): Total domestic use [2021] = 1117
+  Captured (Merged): Total domestic use [2022] = 1118
+  Captured (Merged): Total domestic use [2023] = 1144
+  Captured (Merged): Total domestic use [2024] = 1134
+  Captured (Merged): Exports [2021] = 796
+  Captured (Merged): Exports [2022] = 759
+  Captured (Merged): Exports [2023] = 725
+  Captured (Merged): Exports [2024] = 775
+  Captured (Merged): Total use [2021] = 1913
+  Captured (Merged): Total use [2022] = 1876
+  Captured (Merged): Total use [2023] = 1869
+  Captured (Merged): Total use [2024] = 1909
+  Captured (Merged): Ending stocks [2021] = 674
+  Captured (Merged): Ending stocks [2022] = 570
+  Captured (Merged): Ending stocks [2023] = 658
+  Captured (Merged): Ending stocks [2024] = 769
+  Captured (Merged): Stocks/use (percent) [2021] = 35.3
+  Captured (Merged): Stocks/use (percent) [2022] = 30.4
+  Captured (Merged): Stocks/use (percent) [2023] = 35.2
+  Captured (Merged): Stocks/use (percent) [2024] = 40.3
+  Captured (Merged): Season-avg. farm price ($/bu.) [2021] = 7.63
+  Captured (Merged): Season-avg. farm price ($/bu.) [2022] = 8.83
+  Captured (Merged): Season-avg. farm price ($/bu.) [2023] = 7.20
+  Captured (Merged): Season-avg. farm price ($/bu.) [2024] = 6.00
