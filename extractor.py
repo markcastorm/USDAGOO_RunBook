@@ -39,10 +39,23 @@ def extract_table(pdf_path, table_config, table_name):
                 for t_idx, table in enumerate(tables.tables):
                     extracted = table.extract()
                     flat_table = str(extracted).lower()
-                    if any(x in flat_table for x in ["planted", "production", "crush", "yield", "beginning", "imports", "supply"]):
-                        target_table = extracted
-                        trace_log(f"Found target table on page {i+1}, index {t_idx}")
-                        break
+                    # Generic presence check
+                    generic_match = any(x in flat_table for x in ["planted", "production", "crush", "yield", "beginning", "imports", "supply"])
+                    if not generic_match:
+                        continue
+                    # Per-table discriminator: if config specifies 'discriminators', at least one must match
+                    discriminators = table_config.get("discriminators", [])
+                    if discriminators and not any(d.lower() in flat_table for d in discriminators):
+                        trace_log(f"  Skipping table {t_idx} on page {i+1} (discriminator mismatch)")
+                        continue
+                    # Reject discriminators: if config specifies 'reject_if', skip if any match
+                    reject_if = table_config.get("reject_if", [])
+                    if reject_if and any(r.lower() in flat_table for r in reject_if):
+                        trace_log(f"  Skipping table {t_idx} on page {i+1} (reject_if match)")
+                        continue
+                    target_table = extracted
+                    trace_log(f"Found target table on page {i+1}, index {t_idx}")
+                    break
         if target_table: break
             
     if not target_table: 
@@ -204,12 +217,7 @@ def extract_table(pdf_path, table_config, table_name):
 def extract_all(pdf_path):
     if os.path.exists("extraction_trace.log"): os.remove("extraction_trace.log")
     all_year_data = {} # {year: {code: val}}
-    import copy
-    for table_name, orig_config in config.TABLE_CONFIGS.items():
-        table_config = copy.deepcopy(orig_config)
-        if table_name == "CORN" and config.TARGET_YEAR and config.TARGET_YEAR <= 2024:
-            table_config["mapping"]["Total food, seed & industrial"] = "USDAGOO.CORNSDP.FOODSEEDOTHERINDUSTRIAL.A"
-            
+    for table_name, table_config in config.TABLE_CONFIGS.items():
         print(f"Extracting {table_name}...")
         df = extract_table(pdf_path, table_config, table_name)
         if df is not None and not df.empty:

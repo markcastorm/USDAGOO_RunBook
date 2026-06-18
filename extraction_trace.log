@@ -178,46 +178,55 @@ Detected Sequential Style
   Captured (Seq): Avg. price ($/short ton) [2022] = 375.00
 
 --- Extracting SOYBEAN_OIL ---
-Found target table on page 11, index 0
+  Skipping table 0 on page 11 (discriminator mismatch)
+Found target table on page 11, index 1
 Year Header Row found at index 1: ['', '', '2019/20', '', '', '2020/21', '', '', '2021/22 /1', '', '', '2022/23 /2', '']
-Processing label block at Row 3: ['Production (thou. short tons)', 'Beginning stocks', 'Imports', 'Supply', 'Domestic Use', 'Exports', 'Total use', 'Ending stocks', 'Avg. price ($/short ton)']
+Processing label block at Row 3: ['Production (mil. lbs.)', 'Beginning stocks', 'Imports', 'Supply', 'Domestic Use', 'Biofuel', 'Food, Feed, Other Industrial', 'Exports', 'Total use', 'Ending stocks', 'Avg. price (cents/lb.)']
 Detected Sequential Style
-  Captured (Seq): Production (thou. short tons) [2019] = 51100
-  Captured (Seq): Production (thou. short tons) [2020] = 50565
-  Captured (Seq): Production (thou. short tons) [2021] = 51909
-  Captured (Seq): Production (thou. short tons) [2022] = 53050
-  Captured (Seq): Beginning stocks [2019] = 402
-  Captured (Seq): Beginning stocks [2020] = 341
-  Captured (Seq): Beginning stocks [2021] = 341
-  Captured (Seq): Beginning stocks [2022] = 400
-  Captured (Seq): Imports [2019] = 639
-  Captured (Seq): Imports [2020] = 783
+  Captured (Seq): Production (mil. lbs.) [2019] = 24911
+  Captured (Seq): Production (mil. lbs.) [2020] = 25023
+  Captured (Seq): Production (mil. lbs.) [2021] = 26205
+  Captured (Seq): Production (mil. lbs.) [2022] = 26325
+  Captured (Seq): Beginning stocks [2019] = 1775
+  Captured (Seq): Beginning stocks [2020] = 1853
+  Captured (Seq): Beginning stocks [2021] = 2131
+  Captured (Seq): Beginning stocks [2022] = 2076
+  Captured (Seq): Imports [2019] = 320
+  Captured (Seq): Imports [2020] = 302
   Captured (Seq): Imports [2021] = 450
-  Captured (Seq): Imports [2022] = 450
-  Captured (Seq): Supply [2019] = 52142
-  Captured (Seq): Supply [2020] = 51689
-  Captured (Seq): Supply [2021] = 52700
-  Captured (Seq): Supply [2022] = 53900
-  Captured (Seq): Domestic Use [2019] = 37967
-  Captured (Seq): Domestic Use [2020] = 37580
-  Captured (Seq): Domestic Use [2021] = 37900
-  Captured (Seq): Domestic Use [2022] = 38600
-  Captured (Seq): Exports [2019] = 13834
-  Captured (Seq): Exports [2020] = 13768
-  Captured (Seq): Exports [2021] = 14400
-  Captured (Seq): Exports [2022] = 14800
-  Captured (Seq): Total use [2019] = 51801
-  Captured (Seq): Total use [2020] = 51348
-  Captured (Seq): Total use [2021] = 52300
-  Captured (Seq): Total use [2022] = 53400
-  Captured (Seq): Ending stocks [2019] = 341
-  Captured (Seq): Ending stocks [2020] = 341
-  Captured (Seq): Ending stocks [2021] = 400
-  Captured (Seq): Ending stocks [2022] = 500
-  Captured (Seq): Avg. price ($/short ton) [2019] = 299.50
-  Captured (Seq): Avg. price ($/short ton) [2020] = 392.31
-  Captured (Seq): Avg. price ($/short ton) [2021] = 410.00
-  Captured (Seq): Avg. price ($/short ton) [2022] = 375.00
+  Captured (Seq): Imports [2022] = 600
+  Captured (Seq): Supply [2019] = 27006
+  Captured (Seq): Supply [2020] = 27177
+  Captured (Seq): Supply [2021] = 28786
+  Captured (Seq): Supply [2022] = 29001
+  Captured (Seq): Domestic Use [2019] = 22317
+  Captured (Seq): Domestic Use [2020] = 23323
+  Captured (Seq): Domestic Use [2021] = 25285
+  Captured (Seq): Domestic Use [2022] = 26000
+  Captured (Seq): Biofuel [2019] = 8658
+  Captured (Seq): Biofuel [2020] = 8850
+  Captured (Seq): Biofuel [2021] = 11000
+  Captured (Seq): Biofuel [2022] = 12000
+  Captured (Seq): Food, Feed, Other Industrial [2019] = 13659
+  Captured (Seq): Food, Feed, Other Industrial [2020] = 14473
+  Captured (Seq): Food, Feed, Other Industrial [2021] = 14285
+  Captured (Seq): Food, Feed, Other Industrial [2022] = 14000
+  Captured (Seq): Exports [2019] = 2837
+  Captured (Seq): Exports [2020] = 1723
+  Captured (Seq): Exports [2021] = 1425
+  Captured (Seq): Exports [2022] = 1200
+  Captured (Seq): Total use [2019] = 25154
+  Captured (Seq): Total use [2020] = 25046
+  Captured (Seq): Total use [2021] = 26710
+  Captured (Seq): Total use [2022] = 27200
+  Captured (Seq): Ending stocks [2019] = 1853
+  Captured (Seq): Ending stocks [2020] = 2131
+  Captured (Seq): Ending stocks [2021] = 2076
+  Captured (Seq): Ending stocks [2022] = 1801
+  Captured (Seq): Avg. price (cents/lb.) [2019] = 29.7
+  Captured (Seq): Avg. price (cents/lb.) [2020] = 56.9
+  Captured (Seq): Avg. price (cents/lb.) [2021] = 66.0
+  Captured (Seq): Avg. price (cents/lb.) [2022] = 68.0
 
 --- Extracting WHEAT ---
 Found target table on page 6, index 0

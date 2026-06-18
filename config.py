@@ -112,7 +112,9 @@ TABLE_CONFIGS = {
             "Supply": "USDAGOO.CORNSDP.SUPPLY.A",
             "Feed & residual": "USDAGOO.CORNSDP.FEEDRESIDUAL.A",
             "Ethanol": "USDAGOO.CORNSDP.ETHANOL.A",
+            # 'Food, seed & other industrial' is a sub-line not currently in PDFs → blank until USDA adds it
             "Food, seed & other industrial": "USDAGOO.CORNSDP.FOODSEEDOTHERINDUSTRIAL.A",
+            # 'Total food, seed & industrial' is the total line present in all current PDFs
             "Total food, seed & industrial": "USDAGOO.CORNSDP.TOTALFOODSEEDINDUSTRIAL.A",
             "Total domestic use": "USDAGOO.CORNSDP.TOTALDOMESTICUSE.A",
             "Exports": "USDAGOO.CORNSDP.EXPORTS.A",
@@ -148,6 +150,8 @@ TABLE_CONFIGS = {
     },
     "SOYBEAN_MEAL": {
         "keywords": ["Soybean Meal Supply, Demand, and Price"],
+        "discriminators": ["thou. short tons", "$/short ton"],
+        "reject_if": ["mil. lbs.", "cents/lb.", "biofuel"],
         "mapping": {
             "Production (thou. short tons)": "USDAGOO.SOYBEANMEALSDP.PRODUCTION.A",
             "Beginning stocks": "USDAGOO.SOYBEANMEALSDP.BEGINNINGSTOCKS.A",
@@ -162,6 +166,8 @@ TABLE_CONFIGS = {
     },
     "SOYBEAN_OIL": {
         "keywords": ["Soybean Oil Supply, Demand, and Price"],
+        "discriminators": ["mil. lbs.", "cents/lb."],
+        "reject_if": ["thou. short tons", "$/short ton"],
         "mapping": {
             "Production (mil. lbs.)": "USDAGOO.SOYBEANOILSDP.PRODUCTION.A",
             "Beginning stocks": "USDAGOO.SOYBEANOILSDP.BEGINNINGSTOCKS.A",
