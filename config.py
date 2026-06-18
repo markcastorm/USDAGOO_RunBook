@@ -17,7 +17,7 @@ USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 
 # Extraction Settings
 TARGET_REPORT_NAME = "Grains and Oilseeds Outlook"
-TARGET_YEAR = 2024 # Default to latest
+TARGET_YEAR = 2022 # Default to latest
 
 # Absolute Column Structure (Ordered as per reference CSV/XLSX)
 # Each entry is (CODE, DESCRIPTION)

@@ -73,12 +73,19 @@ def scrape():
         
         # 1. Detect target year if not specified
         if target_year is None:
-            # Look for "2026 Outlook Reports" heading
+            print("Waiting for page elements to load...")
+            try:
+                wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "h4, a.ckeditor-accordion-toggler")))
+            except:
+                pass
+
+            # Look for "Outlook Reports" heading
             headings = driver.find_elements(By.TAG_NAME, "h4")
             for h in headings:
-                if "Outlook Reports" in h.text:
+                h_text = h.text or h.get_attribute("textContent")
+                if h_text and "Outlook Reports" in h_text:
                     try:
-                        target_year = h.text.split()[0]
+                        target_year = h_text.split()[0].strip()
                         print(f"Detected latest year: {target_year}")
                         break
                     except:
@@ -87,10 +94,25 @@ def scrape():
         if target_year is None:
             # Fallback to accordion toggler
             try:
-                first_year_el = driver.find_element(By.CSS_SELECTOR, "dt.ckeditor-accordion-toggler")
-                target_year = first_year_el.text.strip()
-                print(f"Fallback: detected latest year from accordion: {target_year}")
-            except:
+                first_year_el = driver.find_element(By.CSS_SELECTOR, "a.ckeditor-accordion-toggler")
+                text_val = first_year_el.text or first_year_el.get_attribute("textContent")
+                target_year = text_val.strip()
+                print(f"Fallback 1: detected latest year from accordion: {target_year}")
+            except Exception as e:
+                try:
+                    import re
+                    accordions = driver.find_elements(By.CSS_SELECTOR, "dl.styled dt")
+                    for acc in accordions:
+                        text_val = acc.text or acc.get_attribute("textContent")
+                        year_match = re.search(r'\b(20\d{2})\b', text_val)
+                        if year_match:
+                            target_year = year_match.group(1)
+                            print(f"Fallback 2: detected year from dt: {target_year}")
+                            break
+                except:
+                    pass
+            
+            if target_year is None:
                 print("Could not detect year.")
                 return None, None
 
