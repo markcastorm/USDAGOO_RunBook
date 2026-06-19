@@ -102,7 +102,20 @@ def generate_files(df, pdf_metadata, target_year):
         z.write(meta_path, meta_filename)
         
     # 4. Copy to Latest
-    os.makedirs(config.LATEST_DIR, exist_ok=True)
+    print(f"Cleaning up old files in latest directory: {config.LATEST_DIR}")
+    if os.path.exists(config.LATEST_DIR):
+        for item in os.listdir(config.LATEST_DIR):
+            item_path = os.path.join(config.LATEST_DIR, item)
+            try:
+                if os.path.isfile(item_path) or os.path.islink(item_path):
+                    os.unlink(item_path)
+                elif os.path.isdir(item_path):
+                    shutil.rmtree(item_path)
+            except Exception as e:
+                print(f"Warning: Failed to delete {item_path}: {e}")
+    else:
+        os.makedirs(config.LATEST_DIR, exist_ok=True)
+        
     shutil.copy(data_path, os.path.join(config.LATEST_DIR, data_filename))
     shutil.copy(meta_path, os.path.join(config.LATEST_DIR, meta_filename))
     shutil.copy(zip_path, os.path.join(config.LATEST_DIR, zip_filename))

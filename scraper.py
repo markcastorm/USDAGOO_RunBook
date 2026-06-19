@@ -181,10 +181,40 @@ def scrape():
         
         if target_link:
             pdf_url = target_link.get_attribute("href")
-            print(f"Triggering download for: {pdf_url}")
+            filename = pdf_url.split("/")[-1].split("?")[0]
+            if not filename.endswith(".pdf"):
+                filename = f"{target_year}_grains_oilseeds_outlook.pdf"
             
-            # Use JS click to avoid interception by sticky banners/announcements
+            dest_path = os.path.join(run_download_dir, filename)
+            
+            # Method 1: Try direct HTTP download using urllib
+            print(f"Attempting direct HTTP download from: {pdf_url}")
+            try:
+                import urllib.request
+                import ssl
+                # Create an SSL context that ignores certificate verification issues
+                ctx = ssl.create_default_context()
+                ctx.check_hostname = False
+                ctx.verify_mode = ssl.CERT_NONE
+                
+                req = urllib.request.Request(
+                    pdf_url, 
+                    headers={'User-Agent': config.USER_AGENT}
+                )
+                with urllib.request.urlopen(req, context=ctx) as response, open(dest_path, 'wb') as out_file:
+                    out_file.write(response.read())
+                
+                if os.path.exists(dest_path) and os.path.getsize(dest_path) > 0:
+                    print(f"Direct download successful: {dest_path}")
+                    return dest_path, target_year
+            except Exception as e:
+                print(f"Direct HTTP download failed: {e}. Falling back to browser-driven download...")
+            
+            # Method 2: Browser-driven download (Selenium Click)
+            # Force target to '_self' so it doesn't open in a new tab (which disables download behavior in headless Chrome)
+            driver.execute_script("arguments[0].setAttribute('target', '_self');", target_link)
             driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", target_link)
+            time.sleep(1)
             driver.execute_script("arguments[0].click();", target_link)
             
             # Wait for download
